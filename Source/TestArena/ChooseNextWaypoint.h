@@ -20,7 +20,10 @@ public:
 private:
 
 protected:
-
+	//this exposes a blackboard key selector in Blueprint under the category of Blackboard and with the name of Index Selector
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
+	struct FBlackboardKeySelector Index_Key;
 	
-	
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
+	struct FBlackboardKeySelector Waypoint_Key;
 };
